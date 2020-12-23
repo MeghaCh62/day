@@ -31,9 +31,9 @@ export default class parent extends Component {
 
         setInterval(() => {
             let child_style=this.state.child_style
-            child_style["color"]="green"
+            child_style["color"]="yellow"
             this.setState({child_style:child_style},console.log(this.state))
-        }, 5000);
+        }, 20000);
 
     }
 
@@ -55,11 +55,11 @@ export default class parent extends Component {
 
 
                 <br />
-                <input type="text" onChange={(e)=>{
+                <center><input type="text"className="input" onChange={(e)=>{
                     let child_style=this.state.child_style
                     child_style["color"]=e.target.value
                     this.setState({child_style:child_style},console.log(this.state))
-                }}  />
+                }}  /></center> 
 
                 <p>Current color: {this.state.child_style && this.state.child_style.color?this.state.child_style.color:""}</p>
                 <br />

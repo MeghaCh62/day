@@ -1,16 +1,38 @@
 .parent {
     h1{
-        color:blue
+        font-weight: bolder;
+        font-style:italic;
+        color:blue;
+        text-align: center;
         
     }
 
     h2{
-        color:yellow 
+        
+        font-weight: bolder;
+        font-style: oblique;
+        color:blue
     }
 
     .child_component{
         width: auto;
         height: 2000px;
+    }
+    p{
+        font-weight: bolder;
+        font-style: oblique;
+        color:blue;
+        text-align: center;
+
+    }
+    .input
+    {
+        
+        font-weight: bolder;
+        font-style: oblique;
+        color:blue;
+        align-items: center;
+
     }
 
 }
